@@ -1,0 +1,6 @@
+@use 'variables' as var;
+
+p {
+  font-size: clamp(10px, 2vw, 18px);
+  font-family: var.$p-font-family;
+}
