@@ -15,37 +15,78 @@
       // Picture element HTML5 shiv
       document.createElement("picture");
     </script>
-    <script src="picturefill.js" async></script>
+    <script src="./js/picturefill.js" async></script>
   </head>
-  <body>
-    <header class="site-header">
-      <div class="site-branding">
-        <img
-          src="https://via.placeholder.com/150x80?text=Helen+Dog+Training"
-          alt=""
-        />
-      </div>
-      <nav id="site-nav" class="site-nav">
-        <ul class="nav-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Classes</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
+
+  <body class="site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header class="header">
+      <nav id="main-nav" class="main-nav" role="navigation">
+        <div class="container nav-elements">
+          <div class="branding">
+            <img src="./img/svg/Helen_Marinakis_logo.svg" alt="Company logo" />
+          </div>
+          <!-- branding -->
+          <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <!-- nav-elements -->
       </nav>
     </header>
-    <main>
-      <h1>Helen Dog Training</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam ratione
-        possimus natus, vitae qui ab amet, saepe suscipit est quis rerum,
-        quibusdam nobis eos repudiandae?
-      </p>
+
+    <main id="content" class="main-area">
+      <div class="intro">
+        <h1>Helen Dog Training</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam ratione
+          possimus natus, vitae qui ab amet, saepe suscipit est quis rerum,
+          quibusdam nobis eos repudiandae?
+        </p>
+      </div>
+      <article class="card">
+        <h1 class="title">Rescale components in an intuitive way with RFS</h1>
+        <p>
+          This card uses
+          <a href="https://github.com/twbs/rfs" target="_blank">RFS</a> to
+          rescale <code>margin</code>, <code>padding</code>,
+          <code>font-size</code>, <code>box-shadow</code> &amp;
+          <code>border-radius</code>. Resize the codepen to see it in action.
+        </p>
+        <p>
+          This is the codepen example using the Sass mixin to rescale values,
+          for more demo's and documentation, check the
+          <a href="https://github.com/twbs/rfs" target="_blank">Github repo</a>.
+        </p>
+      </article>
       <section class="services">
-        <h2>Services</h2>
+        <div class="services-content">
+          <h2>Services</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            voluptatibus odio, ea cum repudiandae accusamus voluptas pariatur
+            hic ex, impedit laborum dignissimos magni sapiente quaerat.
+          </p>
+        </div>
       </section>
       <section class="about">
         <h2>About</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
+          accusantium dolor amet doloremque perferendis cupiditate, saepe id a
+          corporis, quam aliquid voluptas non atque rerum quae! Adipisci
+          incidunt fugiat nostrum!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dolor
+          repudiandae in distinctio et? Ea accusantium fugiat deleniti
+          necessitatibus eum modi minus, odio iure iusto nostrum cum quasi
+          commodi, numquam voluptate magnam laboriosam in?
+        </p>
       </section>
       <section class="testimonials">
         <h2>testimonials</h2>

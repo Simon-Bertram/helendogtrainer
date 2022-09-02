@@ -1,4 +1,4 @@
-@use 'variables' as var;
+@use './utilities/variables' as var;
 
 p {
   font-size: clamp(10px, 2vw, 18px);

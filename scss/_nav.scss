@@ -1,0 +1,41 @@
+.main-nav {
+
+  .nav-elements {
+    padding-top: 1.75rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid pink;
+  }
+
+  a {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1rem;
+    -webkit-transition: 1s ease-out;
+    transition: 1s ease-out
+  }
+}
+
+.nav-menu {
+  display: flex;
+  gap: 3rem;
+}
+
+.site-nav {
+  padding-left: 2vw;
+}
+
+@media screen and (min-width:600px) {
+  .main-nav .nav-elements {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex
+  }
+}

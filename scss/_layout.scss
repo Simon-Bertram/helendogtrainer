@@ -1,0 +1,50 @@
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Services section */
+
+.services {
+  background: #FFF6E5;
+	padding-bottom: 2em;
+}
+
+.hero {
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+Basic responsive layout for all browsers:
+--------------------------------------------------------------*/
+
+.site {
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for modern browsers:
+--------------------------------------------------------------*/
+
+@supports (grid-area: auto) {
+
+  .site {
+    max-width: none;
+  }
+
+  .main-area > *,
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  .services-content,
+  .hero > *,
+  .intro > *,
+  .about > * {
+    grid-column: 2/4;
+  }
+
+}

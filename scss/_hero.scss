@@ -1,0 +1,15 @@
+.header {
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/hero/calm-dogs-1200w.jpg");
+
+  /* Set a specific height */
+  height: 85vh;
+  max-height: 800px;
+  // max-width: 1700px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
